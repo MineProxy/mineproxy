@@ -1,0 +1,30 @@
+{
+  "name": "minecraft-proxy",
+  "version": "1.0.0",
+  "description": "Easily configurable Minecraft (Java edition) proxy",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bjornskjald/minecraft-proxy.git"
+  },
+  "keywords": [
+    "minecraft",
+    "proxy"
+  ],
+  "author": "Bjornskjald <github@bjorn.ml>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bjornskjald/minecraft-proxy/issues"
+  },
+  "homepage": "https://github.com/Bjornskjald/minecraft-proxy#readme",
+  "dependencies": {
+    "buffer-equal": "0.0.1",
+    "minecraft-protocol": "^1.7.0",
+    "minimist": "^1.2.0",
+    "standard": "^11.0.1"
+  }
+}
