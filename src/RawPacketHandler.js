@@ -21,8 +21,8 @@ class RawPacketHandler {
     const destination = isIncoming ? this.targetClient : this.client
 
     if (source.state !== states.PLAY || meta.state !== states.PLAY) return
-    var packetData = destination.deserializer.parsePacketBuffer(buffer).data.params
-    var packetBuff = source.serializer.createPacketBuffer({name: meta.name, params: packetData})
+    const packetData = destination.deserializer.parsePacketBuffer(buffer).data.params
+    const packetBuff = source.serializer.createPacketBuffer({name: meta.name, params: packetData})
     if (!bufferEqual(buffer, packetBuff)) this.error(meta, buffer, packetBuff, isIncoming)
   }
 }

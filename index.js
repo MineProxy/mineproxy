@@ -26,7 +26,7 @@ Port: ${config.port}
 Dump: ${config.dump_all ? `all except ${config.dump_blacklist.join(', ')}` : config.dump.join(', ')}
 Version: ${config.version}`)
 
-var srv = mc.createServer({
+const srv = mc.createServer({
   'online-mode': config.online,
   port: config.server_port,
   keepAlive: false,
@@ -39,7 +39,7 @@ srv.on('login', client => {
 
   client.print('Incoming connection from ' + client.username, client.addr)
 
-  var targetClient = mc.createClient({
+  const targetClient = mc.createClient({
     host: config.host,
     port: config.port,
     version: config.version,

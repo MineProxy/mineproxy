@@ -1,5 +1,5 @@
 const states = require('minecraft-protocol').states
-var config
+let config
 
 class PacketHandler {
   constructor (client, targetClient, _config) {
