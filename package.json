@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/MineProxy/mineproxy#readme",
   "dependencies": {
+    "@mineproxy/logger": "^1.0.1",
     "minecraft-protocol": "^1.8.3"
   }
 }
