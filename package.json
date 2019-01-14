@@ -7,6 +7,9 @@
     "test": "standard",
     "start": "node index.js"
   },
+  "bin": {
+    "mineproxy": "index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MineProxy/mineproxy.git"
@@ -23,6 +26,7 @@
   "homepage": "https://github.com/MineProxy/mineproxy#readme",
   "dependencies": {
     "@mineproxy/logger": "^1.0.1",
+    "blessed": "^0.1.81",
     "minecraft-protocol": "^1.8.3"
   }
 }
